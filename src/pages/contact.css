@@ -1,0 +1,110 @@
+
+:root {
+  --ruler: 16px;
+  --color-bg: #EBECF0;
+  --color-shadow: #BABECC;
+  --color-white: #FFF;
+  --color-button: #5e68aa;
+  --color-bc: rgb(67, 78, 120);
+}
+
+.contact {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(48,112,157,1);
+  background-color: rgb(60, 140, 197);
+  /* background-color: #0075BB; */
+
+  /* background-color: #eee; */
+}
+.popover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    width: fit-content;
+  }
+  .send-email {
+    display: flex;
+    align-items: center;  }
+    .send-email i {
+      margin-left: 5px; /* Adjust the margin as needed */
+    }
+  .popover p {
+    margin: 0 0 10px;
+  }
+
+  form {
+    padding: var(--ruler);
+    width: calc(var(--ruler) * 20);
+    margin: 0 auto;
+    padding-block-end: 40px;
+  }
+  
+  .cButton,
+  input, 
+  textarea {
+    border: 0;
+    outline: 0;
+    font-size: var(--ruler);
+    border-radius: calc(var(--ruler) * 20);
+    padding: var(--ruler);
+    background-color: var(--color-bg);
+    text-shadow: 1px 1px 0 var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: calc(var(--ruler) * 1.5);
+    width: 100%;
+  }
+  
+  input, textarea {
+    margin-right: calc(var(--ruler) / 2);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  input:focus {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+
+  textarea {
+    letter-spacing: 0.5px;
+    font-size: var(--ruler);
+    color: inherit;
+    width: 100%;
+    min-height: var(--ruler); 
+    height: auto; 
+    resize: none; 
+    margin-right: calc(var(--ruler) / 2);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    page-break-before:avoid;
+  }
+
+  .messageTextarea {
+    min-height: 20px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    border-radius: 28px;
+  
+  }
+

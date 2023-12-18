@@ -1,0 +1,200 @@
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.skills-container h1,
+.shopping-cart h1 {
+  text-align: center;
+  line-height: 1.5; 
+  margin: auto auto;  
+}
+
+.shopping-cart ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills li, 
+.shopping-cart li {
+  position: relative; 
+  list-style-type: none;
+  border: 1px solid transparent;
+  width: 150px;
+  height: 120px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  border-radius: 8px;
+  color: black;
+  background-color: rgba(248,248,255, 0.8);
+  background-color: #EBECF0;
+  font-weight: 900;
+  letter-spacing: 1px;
+  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px #3F00FF;
+  text-shadow: 1px 1px 1px #242424,
+        1px 2px 1px #696969,
+        1px 3px 1px #919191,
+        1px 4px 1px #6f6f6f,
+        1px 5px 1px #cbc8c8;
+
+  text-shadow: 1px 1px 1px whitesmoke,
+  1px 2px 1px #b1b1b1,
+  1px 3px 1px #c7c6c6;
+}
+
+.shopping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .shopping button {
+    display: none; 
+  }
+  
+  .shopping button:enabled {
+    display: inline-block;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-block-end: 50px;
+  }
+  
+  .skills {
+    flex: 2;
+  }
+  
+  .skills-message.active {
+    display: block;
+    animation: fadeInOut 3s ease-in-out; 
+  }
+  
+  .skills-hidden {
+    display: none;
+  }
+  .shoppingCartButton {
+    position: absolute;
+    bottom: 5px; 
+    right: 5px; 
+    background-color: transparent;
+    border: none;
+    cursor: grab;
+    color: white;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    margin: auto auto;
+}
+
+.shoppingCartButton:active {
+    position: absolute;
+    bottom: 5px; 
+    right: 5px; 
+    background-color: transparent;
+    border: none;
+    cursor: grabbing;
+}
+
+.shopping-cart {
+  display: block;
+}
+/* BUTTON */
+
+.sButton {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  padding-inline: 30px;
+  padding-block: 15px;
+  outline: none;
+  border: none;
+  cursor: grab;
+  color: black;
+  text-shadow: 1px 1px 1px whitesmoke,
+  1px 2px 1px #b1b1b1,
+  1px 3px 1px #c7c6c6;
+  box-shadow: 5px 5px 10px #3F00FF;
+  display: block;
+}
+
+.sButton:active {
+  box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  cursor: grabbing;
+}
+
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.sButton {
+  /* Keep your existing styles */
+  margin: 20px 0; /* Adjust the top and bottom margin as needed */
+  display: inline-block; /* Ensure it respects the margin */
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills,
+  .shopping {
+    width: 100%;
+  }
+}
+
+.skills-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px 100px / 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1000;
+  display: none; 
+}
+
+.skills-message p {
+  margin: 0;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
