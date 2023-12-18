@@ -28,7 +28,6 @@ body, html {
 
 .aimg1, .aimg2, .aimg3 {
     position: relative;
-    /* opacity: 0.70; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,6 +35,7 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
 .section-light {
     background-color: lightgrey;
     color: rgb(89, 19, 133);
@@ -95,5 +95,8 @@ body, html {
         font-size: 14px;
         margin: 0;
         letter-spacing: 5px;
+    }
+    .aimg1, .aimg2, .aimg3 {
+        background-attachment: scroll; 
     }
 }
