@@ -8,9 +8,9 @@ const CongratulationsModal = ({ onClose }) => {
     <div className="modal-overlay">
       <div className="modal">
         <div className="modal-content">
-          <p>Congratulations! Your skills summoning game is complete.</p>
+          <p>Congratulations! Your have collected Thaleia's skills successfully!.</p>
           <div>
-            <button onClick={onClose}>Return to Skills Game</button><br />
+            <button onClick={onClose}>Collect all skills again!</button><br />
             <Link to="/contact">
               <button>Contact Thaleia</button>
             </Link>

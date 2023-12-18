@@ -1,6 +1,6 @@
 import React from 'react';
 import "./about.css";
-import { FaCheckDouble } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -43,7 +43,7 @@ const About = () => {
 
       <section className='section section-dark'>
       <h2 className='ap aph2'>Talent Acquisition Hiring</h2>
-        <p className='ap'>Let's turn this monologue into an interview dialogue and discover how my skills can contribute to your company's success journey!<br />I am really looking forward to hearing from you!<br />Contact Thaleia <FaCheckDouble /></p>
+        <p className='ap'>Let's turn this monologue into an interview dialogue and discover how my skills can contribute to your company's success journey!<br />I am really looking forward to hearing from you!<br />Contact <Link to="/contact"><u>Thaleia</u></Link></p>
       </section>
 
       <div className='aimg1'>

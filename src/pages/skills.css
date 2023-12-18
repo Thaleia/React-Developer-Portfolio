@@ -165,6 +165,17 @@
     width: 100%;
   }
 }
+@media (max-width: 376px) {
+  .shopping-cart ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  ul {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+}
 
 .skills-message {
   position: fixed;
